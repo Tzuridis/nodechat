@@ -15,6 +15,8 @@ var io = socket_io(server);
 
 var users = 0;
 
+var username = "User" + users;
+
 io.on('connection', function (socket) {
         users++;
         console.log('Client connected - Users connected', users);
